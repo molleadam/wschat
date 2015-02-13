@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.prova.MainActivity" >
+
+    <ListView
+        android:id="@+id/arrayList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/disconnect"
+        android:layout_alignTop="@+id/disconnect" >
+    </ListView>
+
+</LinearLayout>

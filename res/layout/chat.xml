@@ -1,0 +1,43 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.example.wschat"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sfondochat"
+    tools:context="com.example.prova.ChatActivity" >
+
+        <com.example.wschat.MyListView
+            android:id="@+id/arrayList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            
+            android:transcriptMode="alwaysScroll" 
+            android:layout_marginBottom="50dp"
+            />
+                
+        <LinearLayout
+            
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/white"
+            android:orientation="horizontal"
+        	android:layout_width="match_parent"
+        	android:layout_height="50dp">
+        	
+        	<EditText 
+        	    android:id="@+id/editmessage"
+        		android:layout_width="match_parent"
+        		android:layout_height="match_parent"
+        		android:layout_weight="1"
+        		/>
+        	 
+        	 <Button
+        	    
+        	    android:layout_weight="1" 
+        	    android:id="@+id/button_send"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/ic_action_send_now"
+		        android:onClick="sendMessage" />
+        </LinearLayout>
+</RelativeLayout>
